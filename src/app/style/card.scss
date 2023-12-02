@@ -1,0 +1,38 @@
+.container {
+  width: 445px;
+  min-height: 118px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 26px 34px;
+  margin-bottom: 34px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &.active {
+    transform: translateX(-22px);
+    animation: expandAnimation 0.3s ease forwards;
+  }
+
+  .header {
+    color: #374151;
+  }
+
+  .tag {
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 8px;
+  }
+}
+
+@keyframes expandAnimation {
+  from {
+    width: 445px;
+    padding: 26px 34px;
+  }
+  to {
+    width: 490px;
+    padding: 26px 56px;
+  }
+}
